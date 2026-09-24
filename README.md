@@ -1,39 +1,25 @@
-# PGM611 - Scripting - Llusco Galilea
+# Juego Multimedia Principal
 
-Proyecto de practica en Unity 2D con Universal Render Pipeline (URP).
+Proyecto de Alexcito basado en el documento **Creando un videojuego 2D con Unity** de Rubén Gonzalo Soria Soria (2026).
 
-## Requisitos
+- Unity **6000.3.16f1**, plantilla Universal 2D.
+- Abrir la carpeta `My project` desde Unity Hub.
+- Recursos originales **Legacy Fantasy - High Forest** y **Legacy Fantasy - Debug Map**, de Anokolisa, tal como indica el PDF.
+- Plataforma: escritorio, con teclado. Android queda fuera del alcance.
+- Se sigue el orden del tutorial, corrigiendo los problemas de implementación y completando el pisotón del caracol.
 
-- Git y Unity Hub.
-- Unity Editor **6000.3.16f1**, version indicada en `ProjectSettings/ProjectVersion.txt`.
-- Conexion a Internet para que Unity descargue los paquetes al abrirlo por primera vez.
-- Para generar un ejecutable, instalar desde Unity Hub el modulo de compilacion de la plataforma de destino.
+## Avances
 
-## Clonar y probar
+1. Proyecto base y configuración de Git.
+2. Escenario, físicas, movimiento, salto, animaciones y cámara.
+3. Recolección, marcador, peligros, reinicio y caracol.
 
-```sh
-git clone https://github.com/Galileya/PGM611_scripting_LluscoGalilea.git
-```
+El proyecto se limita a escritorio: A/D o flechas para moverse y espacio para saltar. Las abejas aumentan el marcador; tocar el jabalí, el caracol por un costado o caer fuera del nivel reinicia la escena. Se puede derrotar al caracol al caer sobre él.
 
-1. En Unity Hub, seleccionar **Add / Agregar proyecto desde disco** y elegir la carpeta clonada (la que contiene `Assets`, `Packages` y `ProjectSettings`).
-2. Abrir con Unity **6000.3.16f1** y esperar la importacion de recursos y paquetes.
-3. Abrir `Assets/clase1.unity` desde la ventana Project.
-4. Pulsar **Play**. La escena contiene el piso/tilemap, la camara y la iluminacion 2D.
+Los commits se agrupan por avances importantes y se verifican en Unity.
 
-Los scripts de `Assets/scrips` son ejercicios iniciales de clases y namespaces. Los metodos de jugador estan vacios: todavia no hay movimiento ni controles de juego implementados.
+## Recursos
 
-## Crear un ejecutable
+Fuente oficial: https://anokolisa.itch.io/sidescroller-pixelart-sprites-asset-pack-forest-16x16
 
-En **File > Build Profiles**, seleccionar la plataforma instalada y agregar `Assets/clase1.unity` a la lista de escenas. Dejarla habilitada como primera escena y compilar. La configuracion original conserva `SampleScene` como escena de compilacion predeterminada.
-
-## Archivos incluidos
-
-- `Assets/`: escenas, scripts, recursos y archivos `.meta` que conservan las referencias.
-- `Packages/`: manifiesto y versiones resueltas de dependencias.
-- `ProjectSettings/`: configuracion del proyecto y version del editor.
-
-`Library`, `Temp`, `Logs`, `UserSettings` y archivos de IDE se generan localmente y no se versionan. No eliminar ni regenerar manualmente los `.meta` incluidos.
-
-## Verificacion
-
-Se revisaron la estructura del proyecto, las dependencias y la inclusion de recursos y metadatos. No se ejecuto una prueba Play ni una compilacion del proyecto en Unity durante la preparacion del repositorio.
+Los gráficos pertenecen a Anokolisa; sus condiciones de uso son independientes del código de este proyecto.

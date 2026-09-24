@@ -1,6 +1,6 @@
 # Juego Multimedia Principal
 
-Proyecto de Alexcito basado en el documento **Creando un videojuego 2D con Unity** de Rubén Gonzalo Soria Soria (2026).
+Proyecto de Galilea basado en el documento **Creando un videojuego 2D con Unity** de Rubén Gonzalo Soria Soria (2026).
 
 - Unity **6000.3.16f1**, plantilla Universal 2D.
 - Abrir la carpeta `My project` desde Unity Hub.
